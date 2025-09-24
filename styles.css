@@ -21,6 +21,7 @@ h1{
     margin-bottom: 40px;
     background-color: red;
     display: flex;
+    align-items: center;
 }
 
 .form{
