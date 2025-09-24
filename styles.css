@@ -14,8 +14,14 @@ p{
 
 
 }
-{/* Style for span elements */}
+
+/* Style for span elements */
+
 span{
     text-transform: uppercase;/* Uppercase text for spans */
     font-size: 14px;/* Smaller font size for spans */
+}
+
+ul{
+    list-style: none;
 }
