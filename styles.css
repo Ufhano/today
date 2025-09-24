@@ -20,6 +20,7 @@ p{
 span{
     text-transform: uppercase;/* Uppercase text for spans */
     font-size: 14px;/* Smaller font size for spans */
+    text-align:center;
 }
 
 ul{
@@ -43,4 +44,8 @@ ul{
     "XPN2" 0,
     "YPN1" 0,
     "YPN2" 0;
+}
+
+.jer{
+    position: relative;
 }
