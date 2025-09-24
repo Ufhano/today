@@ -45,9 +45,9 @@ span{
 
 .fact{
     font-size: 20px;
-    line-height: 1.4
+    line-height: 1.4;
     background-color: black;
-
+    margin-bottom: 16px;
 }
 
 ul{
