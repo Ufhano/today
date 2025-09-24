@@ -13,6 +13,7 @@ h1{
     text-transform: uppercase;
     text-align:center;
     color: white;
+    margin-bottom: 16px;
 }
 .header{
     margin-bottom: 40px;
@@ -45,6 +46,7 @@ span{
 ul{
     list-style: none;
     color: white;
+    margin-bottom: 16px;
 }
 
 /* Example: using a custom class */
