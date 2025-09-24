@@ -5,7 +5,7 @@ h1{
     font-size: 42px;
     text-transform: uppercase;
     text-align:center;
-    background-color: white;
+    color: white;
 }
 
 
@@ -15,6 +15,7 @@ p{
     font-family: Arial, sans-serif; /* Set a clean and modern font */
     color: #333; /* Dark gray text color for better contrast */
     margin: 20px; /* Add some margin around paragraphs */
+    color: white;
 
 
 }
@@ -24,11 +25,14 @@ p{
 span{
     text-transform: uppercase;/* Uppercase text for spans */
     font-size: 14px;/* Smaller font size for spans */
+    color: white; /* White color for spans */
+
     
 }
 
 ul{
     list-style: none;
+    color: white;
 }
 
 /* Example: using a custom class */
