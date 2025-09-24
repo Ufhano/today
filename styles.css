@@ -16,15 +16,13 @@ h1{
     color: white;
     margin-bottom: 16px;
     text-align: center  ;
-    background-color: purple;
-    line-height: 1;
+        line-height: 1;
     margin-top: 6px;
 
 }
 .header{
     margin-bottom: 40px;
-   
-    display: flex;
+       display: flex;
     align-items: center;
     justify-content: space-between;
 }
