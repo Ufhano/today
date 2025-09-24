@@ -3,3 +3,12 @@ h1{
     text-transform: uppercase;
     text-align:center;
 }
+
+
+p{
+    font-size:20px;
+    line-height:medium; /* Adjust line height for better readability */
+    font-family: Arial, sans-serif; /* Set a clean and modern font */
+    color: #333; /* Dark gray text color for better contrast */
+    margin: 20px; /* Add some margin around paragraphs */
+}
