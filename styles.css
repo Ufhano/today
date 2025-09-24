@@ -41,6 +41,7 @@ ul{
   font-optical-sizing: auto;
   font-weight: 400; /* choose between 100–900 */
   font-style: normal;
+  colu;
   font-variation-settings:
     "slnt" 0,
     "CRSV" 0.5,
@@ -63,6 +64,7 @@ ul{
   font-family: "Bitcount Single Ink", system-ui;
   font-optical-sizing: auto;
   font-weight: 101px;
+  color: white;
   font-style: normal;
   font-variation-settings:
     "slnt" 0,
@@ -78,6 +80,7 @@ ul{
 }
 
 .geo-regular {
+    color: white;
   font-family: "Geo", sans-serif; /* Uses the Geo font; falls back to sans-serif */
   font-weight: 800;              /* Regular weight */
   font-style: normal;      
