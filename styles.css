@@ -18,6 +18,9 @@ h1{
     margin-bottom: 40px;
 }
 
+.form{
+    margin-bottom: 40px;
+}
 p{
     font-size:20px;
     line-height:medium; /* Adjust line height for better readability */
