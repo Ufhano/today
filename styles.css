@@ -1,5 +1,7 @@
+
 body{
     background-color: black;
+    color: white;
 }
 h1{
     font-size: 42px;
@@ -41,7 +43,7 @@ ul{
   font-optical-sizing: auto;
   font-weight: 400; /* choose between 100–900 */
   font-style: normal;
-  colu;
+  color: white;
   font-variation-settings:
     "slnt" 0,
     "CRSV" 0.5,
