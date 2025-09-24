@@ -68,3 +68,9 @@ ul{
     "YPN1" 0,
     "YPN2" 0;
 }
+
+.geo-regular {
+  font-family: "Geo", sans-serif; /* Uses the Geo font; falls back to sans-serif */
+  font-weight: 800;              /* Regular weight */
+  font-style: normal;      
+    }    /* Normal style */
