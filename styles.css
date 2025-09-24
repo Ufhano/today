@@ -43,6 +43,10 @@ span{
     
 }
 
+.fact{
+    font-size: 20px
+}
+
 ul{
     list-style: none;
     color: white;
