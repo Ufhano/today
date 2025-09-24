@@ -11,4 +11,11 @@ p{
     font-family: Arial, sans-serif; /* Set a clean and modern font */
     color: #333; /* Dark gray text color for better contrast */
     margin: 20px; /* Add some margin around paragraphs */
+
+
+}
+{/* Style for span elements */}
+span{
+    text-transform: uppercase;/* Uppercase text for spans */
+    font-size: 14px;/* Smaller font size for spans */
 }
