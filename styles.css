@@ -1,52 +1,65 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    
+
 }
-body{
+
+body {
     background-color: black;
     color: white;
     padding: 40px;
     ;
 }
-h1{
+
+h1 {
     font-size: 42px;
     text-transform: uppercase;
-    text-align:center;
+    text-align: center;
     color: white;
     margin-bottom: 16px;
-    text-align: center  ;
-        line-height: 1;
+    text-align: center;
+    line-height: 1;
     margin-top: 6px;
 
 }
-.header{
+
+.factclass{
+    padding-right: 12px;
+}
+
+.header {
     margin-bottom: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-right: 20px;
 }
-.container{
-    
+
+.container {
+
     display: flex;
     align-items: center;
     ;
 }
 
-.form{
+.form {
     margin-bottom: 40px;
     background-color: #44403c;
     padding: 16px 40px;
     text-align: center;
 
 }
-p{
-    font-size:20px;
-    line-height:medium; /* Adjust line height for better readability */
-    font-family: Arial, sans-serif; /* Set a clean and modern font */
-    color: #333; /* Dark gray text color for better contrast */
-    margin: 20px; /* Add some margin around paragraphs */
+
+p {
+    font-size: 20px;
+    line-height: medium;
+    /* Adjust line height for better readability */
+    font-family: Arial, sans-serif;
+    /* Set a clean and modern font */
+    color: #333;
+    /* Dark gray text color for better contrast */
+    margin: 20px;
+    /* Add some margin around paragraphs */
     color: white;
 
 
@@ -54,25 +67,30 @@ p{
 
 /* Style for span elements */
 
-span{
-    text-transform: uppercase;/* Uppercase text for spans */
-    font-size: 14px;/* Smaller font size for spans */
-    color: white; /* White color for spans */
+span {
+    text-transform: uppercase;
+    /* Uppercase text for spans */
+    font-size: 14px;
+    /* Smaller font size for spans */
+    color: white;
+    /* White color for spans */
 
-    
+
 }
 
-.fact{
+.fact {
     font-size: 20px;
     line-height: 1.4;
-    background-color: #44403c; /* Dark gray background for contrast */
-    border-radius: 8px; /* Rounded corners */
+    background-color: #44403c;
+    /* Dark gray background for contrast */
+    border-radius: 8px;
+    /* Rounded corners */
     margin-bottom: 16px;
     padding: 16px;
-    padding :16px 24px;
+    padding: 16px 24px;
 }
 
-ul{
+ul {
     list-style: none;
     color: white;
     margin-bottom: 16px;
@@ -80,25 +98,26 @@ ul{
 
 /* Example: using a custom class */
 .bitcount-text {
-  font-family: "Bitcount Single Ink", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 400; /* choose between 100–900 */
-  font-style: normal;
-  color: white;
-  font-variation-settings:
-    "slnt" 0,
-    "CRSV" 0.5,
-    "ELSH" 0,
-    "ELXP" 0,
-    "SZP1" 0,
-    "SZP2" 0,
-    "XPN1" 0,
-    "XPN2" 0,
-    "YPN1" 0,
-    "YPN2" 0;
+    font-family: "Bitcount Single Ink", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    /* choose between 100–900 */
+    font-style: normal;
+    color: white;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0.5,
+        "ELSH" 0,
+        "ELXP" 0,
+        "SZP1" 0,
+        "SZP2" 0,
+        "XPN1" 0,
+        "XPN2" 0,
+        "YPN1" 0,
+        "YPN2" 0;
 }
 
-.jer{
+.jer {
     position: relative;
 }
 
@@ -114,7 +133,11 @@ ul{
 
 .geo-regular {
     color: white;
-  font-family: "Geo", sans-serif; /* Uses the Geo font; falls back to sans-serif */
-  font-weight: 800;              /* Regular weight */
-  font-style: normal;      
-    }    /* Normal style */
+    font-family: "Geo", sans-serif;
+    /* Uses the Geo font; falls back to sans-serif */
+    font-weight: 800;
+    /* Regular weight */
+    font-style: normal;
+}
+
+/* Normal style */
