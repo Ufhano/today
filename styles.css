@@ -91,6 +91,7 @@ span {
     display: flex;
     align-items: center;
     gap: 24px;
+    letter-spacing: -1px;
 }
 
 ul {
