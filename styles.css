@@ -155,4 +155,5 @@ ul {
 /* Main Layout */
 .container {
    width: 1000px;
+   background-color: orangered;
 }
