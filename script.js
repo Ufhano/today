@@ -18,7 +18,15 @@ btn.addEventListener('click', function () {
 
 //values
 //there is const value and let value
+//const cant be updated later
+//let can be updated
 
 const text = 'Lisbon is the capital of portugal';
 
+//update later
 let votesInteresting = 23;
+let votesMindblowing = 5;
+
+//operator
+votesInteresting = votesInteresting + 1;
+console.log(votesMindblowing);
