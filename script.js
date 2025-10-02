@@ -29,4 +29,9 @@ let votesMindblowing = 5;
 
 //operator
 votesInteresting = votesInteresting + 1;
+
+votesMindblowing++;
 console.log(votesMindblowing);
+
+let totalUpvotes = votesInteresting + votesMindblowing;
+console.log(totalUpvotes);
