@@ -1,161 +1,222 @@
 * {
-    margin: 0;
-    padding: 0;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: black;
-    color: white;
-    padding: 40px;
-    ;
+  background-color: #292524;
+  color: #fafaf9;
+  font-family: "Sono", sans-serif;
+  padding: 48px 64px;
+}
+
+/* MAIN LAYOUT */
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 48px;
+}
+
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ELEMENTS */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo img {
+  width: 68px;
+  height: 68px;
 }
 
 h1 {
-    font-size: 42px;
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
-    margin-bottom: 16px;
-    text-align: center;
-    line-height: 1;
-    margin-top: 6px;
-    margin-right: 0px
-
+  font-size: 42px;
+  text-transform: uppercase;
+  font-family: "Coiny", sans-serif;
+  line-height: 1;
+  margin-top: 6px;
 }
 
-
-
-.header {
-    margin-bottom: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 20px;
-     margin-right: 20px
-}
-
-.container {
-
-    display: flex;
-    align-items: center;
-    padding-right:500px;
-}
-
-.form {
-    margin-bottom: 40px;
-    background-color: #44403c;
-    padding: 16px 40px;
-    text-align: center;
-
-}
-
-p {
-    font-size: 20px;
-    line-height: medium;
-    /* Adjust line height for better readability */
-    font-family: Arial, sans-serif;
-    /* Set a clean and modern font */
-    color: #333;
-    /* Dark gray text color for better contrast */
-    margin: 20px;
-    /* Add some margin around paragraphs */
-    color: white;
-
-
-}
-
-/* Style for span elements */
-
-span {
-    text-transform: uppercase;
-    /* Uppercase text for spans */
-    font-size: 14px;
-    /* Smaller font size for spans */
-    color: white;
-    /* White color for spans */
-
-
+.category {
+  margin-bottom: 16px;
 }
 
 .fact {
-    font-size: 20px;
-    line-height: 1.4;
-    background-color: #44403c;
-    /* Dark gray background for contrast */
-    border-radius: 8px;
-    /* Rounded corners */
-    margin-bottom: 16px;
-    padding: 16px;
-    padding: 16px 24px;
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    letter-spacing: -1px;
+  font-size: 20px;
+  line-height: 1.4;
+  background-color: #44403c;
+  margin-bottom: 16px;
+  padding: 16px 24px;
+  letter-spacing: -1px;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+@media (max-width: 1200px) {
+  .fact {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+  }
+}
+
+.tag {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Coiny", sans-serif;
+  padding-top: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 100px;
+}
+
+.vote-buttons {
+  margin-left: auto;
+  flex-shrink: 0;
+
+  display: flex;
+  gap: 8px;
+}
+
+.vote-buttons button {
+  border: none;
+  background-color: #78716c;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 100px;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.vote-buttons button:hover {
+  background-color: #292524;
 }
 
 ul {
-    list-style: none;
-    color: white;
-    margin-bottom: 16px;
+  list-style: none;
 }
 
-/* Example: using a custom class */
-.bitcount-text {
-    font-family: "Bitcount Single Ink", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    /* choose between 100–900 */
-    font-style: normal;
-    color: white;
-    font-variation-settings:
-        "slnt" 0,
-        "CRSV" 0.5,
-        "ELSH" 0,
-        "ELXP" 0,
-        "SZP1" 0,
-        "SZP2" 0,
-        "XPN1" 0,
-        "XPN2" 0,
-        "YPN1" 0,
-        "YPN2" 0;
+.source:link,
+.source:visited {
+  color: #a8a29e;
+  text-decoration: none;
+  margin-left: 12px;
+  transition: 0.3s;
 }
 
-.jer {
-    position: relative;
+.source:hover,
+.source:active {
+  color: #3b82f6;
 }
 
-
-.name {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-family: sans-serif;
-    padding-top: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
+.btn {
+  border: none;
+  font-family: "Coiny", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 16px 0 13px;
+  background-image: linear-gradient(135deg, #3b82f6, #ef4444, #16a34a, #eab308);
+  color: inherit;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.geo-regular {
-    color: white;
-    font-family: "Geo", sans-serif;
-    /* Uses the Geo font; falls back to sans-serif */
-    font-weight: 800;
-    /* Regular weight */
-    font-style: normal;
+.btn:hover {
+  transform: scale(110%) rotate(-2deg);
 }
 
-/* Normal style */
-
-.main {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    gap: 48px;
+.btn-large {
+  font-size: 20px;
+  padding: 20px 32px 17px;
 }
 
-/* Main Layout */
-.container {
-   width: 1000px;
-   background-color: orangered;
-   margin-left: auto;
-    margin-right: auto;
+.btn-all-categories {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.btn-category {
+  width: 100%;
+  background-image: none;
+}
+
+/* FORM */
+.fact-form {
+  background-color: #44403c;
+  margin-bottom: 40px;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 16px;
+}
+
+.fact-form input,
+.fact-form select {
+  width: 220px;
+  background-color: #78716c;
+  border: none;
+  border-radius: 100px;
+  padding: 16px;
+  font-size: 18px;
+  color: inherit;
+  font-family: inherit;
+}
+
+.fact-form input::placeholder {
+  color: #a8a29e;
+}
+
+.fact-form input:first-child {
+  flex-grow: 1;
+}
+
+.fact-form span {
+  font-weight: 600;
+  font-size: 18px;
+  margin-right: 18px;
+}
+
+@media (max-width: 1000px) {
+  body {
+    padding: 32px 48px;
+  }
+
+  .fact-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .fact-form input,
+  .fact-form select {
+    width: auto;
+  }
 }
