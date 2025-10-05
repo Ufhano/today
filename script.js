@@ -47,9 +47,14 @@ console.log(isCorrect);
 //function to calculate the age of a fact
 
 function calcFactAge(year) {
-  const currentYear = 2025;
+  const currentYear = new Date().getFullYear(); //2025;//instead of writing the currect year could use a function inside of a function
   const age = currentYear - year;
   return age;
 }
 const age1 = calcFactAge(2015);
 console.log(age1);
+
+//reusing function
+
+console.log(calcFactAge(2020));
+console.log(calcFactAge(2017));
