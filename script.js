@@ -146,4 +146,5 @@ console.log(newFact);
 const factObj = {
   text: 'Johannesburg is the capital of South Africa',
   category: 'society',
+  createdIn: 2015,
 };
