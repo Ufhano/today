@@ -123,4 +123,4 @@ const calcFactAge2 = (year) =>
   //thats a fucntiion btw , now we use a tertnary function
   year <= new Date().getFullYear()
     ? new Date().getFullYear() - year
-    : `impossible `;
+    : `impossible year .Year needs to be less or equal to ${new Date().getFullYear()}`;
