@@ -135,3 +135,6 @@ console.log(fact.length - 1);
 
 //creating multiple var
 const [text, createdIn] = fact;
+
+console.log(createdIn);
+const newFact = [...fact, 'society'];
