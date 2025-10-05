@@ -108,6 +108,6 @@ console.log(upperText);
 const str = `the current fact is "${text}".Its is ${calcFactAge(
   2015
 )} years old .It is probably${
-  totalUpvotes > votesFalse ? 'facts' : 'not true'
+  totalUpvotes > votesFalse ? ' facts' : 'not true'
 }`;
 console.log(str);
