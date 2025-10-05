@@ -50,8 +50,8 @@ function calcFactAge(year) {
   const currentYear = new Date().getFullYear(); //2025;//instead of writing the currect year could use a function inside of a function
   const age = currentYear - year;
 
-  if (age >= 0) console.log('impossible year');
-  return age;
+  if (age >= 0) return age;
+  else return 'impossible year';
 }
 const age1 = calcFactAge(2015);
 console.log(age1);
