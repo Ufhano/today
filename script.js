@@ -66,6 +66,6 @@ if (votesInteresting === votesMindblowing) {
   alert('this fact is interesting and mindblowing');
 } else if (votesInteresting < votesMindblowing) {
   console.log('Mindblowing fact');
-} elif(votesInteresting>votesMindblowing){
-  console.log("Interesting Fact");
+} else if (votesInteresting > votesMindblowing) {
+  console.log('Interesting Fact');
 }
