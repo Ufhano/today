@@ -91,3 +91,8 @@ if (votesInteresting) {
 //Bthe rue side
 //C false part
 //example
+//defination btw
+let votesFalse = 20;
+const totalUpvotes = votesInteresting + votesMindblowing;
+const message = totalUpvotes > votesFalse ? 'absolutely true' : 'really false';
+alert(message);
