@@ -105,5 +105,5 @@ console.log(upperText);
 
 //
 //using these `` means we can poass in a value in the string
-const str = `the current fact is ${1}`;
+const str = `the current fact is ${text}`;
 console.log(str);
