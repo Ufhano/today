@@ -148,12 +148,14 @@ const factObj = {
   category: 'society',
   createdIn: 2015,
   isCorrect: true,
+  //method
   createSummary: function () {
     return `The fact ${
       this.text
     } is from the category${this.category.toUpperCase()}`;
   },
 };
+//destructuring objs
 
 const { category, isCorrect } = factObj;
 console.log(category);
