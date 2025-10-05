@@ -1,4 +1,4 @@
-console.log('Hello, World!');
+// console.log('Hello, World!');
 
 document.querySelector('.btn-open'); //selecting the button
 
@@ -46,22 +46,22 @@ btn.addEventListener('click', function () {
 
 //function to calculate the age of a fact
 
-function calcFactAge(year) {
-  const currentYear = new Date().getFullYear(); //2025;//instead of writing the currect year could use a function inside of a function
-  const age = currentYear - year;
+// function calcFactAge(year) {
+//   const currentYear = new Date().getFullYear(); //2025;//instead of writing the currect year could use a function inside of a function
+//   const age = currentYear - year;
 
-  if (age >= 0) return age;
-  else
-    return `impossible year .Year needs to be less or equal to ${currentYear}`;
-}
-const age1 = calcFactAge(2015);
-console.log(age1);
+//   if (age >= 0) return age;
+//   else
+//     return `impossible year .Year needs to be less or equal to ${currentYear}`;
+// }
+// const age1 = calcFactAge(2015);
+// console.log(age1);
 
-//reusing function
+// //reusing function
 
-console.log(calcFactAge(2020));
-console.log(calcFactAge(2017));
-console.log(calcFactAge(2026));
+// console.log(calcFactAge(2020));
+// console.log(calcFactAge(2017));
+// console.log(calcFactAge(2026));
 
 // let votesInteresting = 20;
 // let votesMindblowing = 5;
@@ -119,8 +119,12 @@ console.log(calcFactAge(2026));
 //basic
 // const calcFactAge2 = year - 2022;
 //arrow function
-const calcFactAge2 = (year) =>
-  //thats a fucntiion btw , now we use a tertnary function
-  year <= new Date().getFullYear()
-    ? new Date().getFullYear() - year
-    : `impossible year .Year needs to be less or equal to ${new Date().getFullYear()}`;
+// const calcFactAge2 = (year) =>
+//   //thats a fucntiion btw , now we use a tertnary function
+//   year <= new Date().getFullYear()
+//     ? new Date().getFullYear() - year
+//     : `impossible year .Year needs to be less or equal to ${new Date().getFullYear()}`;
+
+//arrays
+
+const fact = [' Johannesburg is the capital of South Africa', 2015, true];
