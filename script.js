@@ -152,10 +152,11 @@ const factObj = {
   createSummary: function () {
     return `The fact ${
       this.text
-    } is from the category${this.category.toUpperCase()}`;
+    } is from the category ${this.category.toUpperCase()}`;
   },
 };
 //destructuring objs
 
 const { category, isCorrect } = factObj;
 console.log(category);
+console.log(factObj.createSummary());
