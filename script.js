@@ -41,3 +41,15 @@ console.log('Upvotes', totalUpvotes);
 let voteFalse = 4;
 const isCorrect = voteFalse < totalUpvotes;
 console.log(isCorrect);
+
+//functions
+
+//function to calculate the age of a fact
+
+function calcFactAge(year) {
+  const currentYear = 2025;
+  const age = currentYear - year;
+  return age;
+}
+const age1 = calcFactAge(2015);
+console.log(age1);
