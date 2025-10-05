@@ -131,3 +131,4 @@ const fact = [' Johannesburg is the capital of South Africa', 2015, true];
 console.log(fact);
 console.log(fact[1]);
 console.log(fact.length);
+console.log(fact.length - 1);
