@@ -63,52 +63,62 @@ console.log(calcFactAge(2020));
 console.log(calcFactAge(2017));
 console.log(calcFactAge(2026));
 
-let votesInteresting = 20;
-let votesMindblowing = 5;
+// let votesInteresting = 20;
+// let votesMindblowing = 5;
 
-if (votesInteresting === votesMindblowing) {
-  alert('this fact is interesting and mindblowing');
-} else if (votesInteresting < votesMindblowing) {
-  console.log('Mindblowing fact');
-} else if (votesInteresting > votesMindblowing) {
-  console.log('Interesting Fact');
-}
+// if (votesInteresting === votesMindblowing) {
+//   alert('this fact is interesting and mindblowing');
+// } else if (votesInteresting < votesMindblowing) {
+//   console.log('Mindblowing fact');
+// } else if (votesInteresting > votesMindblowing) {
+//   console.log('Interesting Fact');
+// }
 
-//truthy and falsy values
-//falsy valkues are 0, null, {} ,'',`undefined, NaN
-//truthy values are '0', ' ', [], 1, -1, 'false', true
+// //truthy and falsy values
+// //falsy valkues are 0, null, {} ,'',`undefined, NaN
+// //truthy values are '0', ' ', [], 1, -1, 'false', true
 
-if (votesInteresting) {
-  console.log('truthy ');
-} else {
-  console.log('not all that ');
-}
+// if (votesInteresting) {
+//   console.log('truthy ');
+// } else {
+//   console.log('not all that ');
+// }
 
-//ternary operation
+// //ternary operation
 
-//if else statements are cool and all but when we want a value we use a ternary operation
-//3parts
-//A condition
-//Bthe rue side
-//C false part
-//example
-//defination btw
-let votesFalse = 20;
-const totalUpvotes = votesInteresting + votesMindblowing;
-// const message = totalUpvotes > votesFalse ? 'absolutely true' : 'really false';
-// alert(message);
-//working with strings
-const text = 'Lisbon is the capital of portugal';
+// //if else statements are cool and all but when we want a value we use a ternary operation
+// //3parts
+// //A condition
+// //Bthe rue side
+// //C false part
+// //example
+// //defination btw
+// let votesFalse = 20;
+// const totalUpvotes = votesInteresting + votesMindblowing;
+// // const message = totalUpvotes > votesFalse ? 'absolutely true' : 'really false';
+// // alert(message);
+// //working with strings
+// const text = 'Lisbon is the capital of portugal';
 
-//passing variables in string s?
-const upperText = text.toUpperCase();
-console.log(upperText);
+// //passing variables in string s?
+// const upperText = text.toUpperCase();
+// console.log(upperText);
 
-//
-//using these `` means we can poass in a value in the string
-const str = `the current fact is "${text}".Its is ${calcFactAge(
-  2015
-)} years old .It is probably${
-  totalUpvotes > votesFalse ? ' facts' : 'not true'
-}`;
-console.log(str);
+// //
+// //using these `` means we can poass in a value in the string
+// const str = `the current fact is "${text}".Its is ${calcFactAge(
+//   2015
+// )} years old .It is probably${
+//   totalUpvotes > votesFalse ? ' facts' : 'not true'
+// }`;
+// console.log(str);
+
+//soo arrow functions , these save us time so instead of using a return statemnet we use an arrow fuction ?
+//interestinog? =>
+
+//basic
+const calcFactAge2 = year - 2022;
+//arrow function
+const calcFactAge2 = (year) =>
+  //thats a fucntiion btw , now we use a tertnary function
+  year <= new Date().getFullYear;
