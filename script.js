@@ -101,3 +101,4 @@ const text = 'Lisbon is the capital of portugal';
 
 //passing variables in string s?
 const upperText = text.upperText;
+console.log(text);
