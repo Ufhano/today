@@ -138,3 +138,4 @@ const [text, createdIn] = fact;
 
 console.log(createdIn);
 const newFact = [...fact, 'society'];
+console.log(newFact);
