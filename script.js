@@ -132,3 +132,6 @@ console.log(fact);
 console.log(fact[1]);
 console.log(fact.length);
 console.log(fact.length - 1);
+
+//creating multiple var
+const [text, createdIn] = fact;
