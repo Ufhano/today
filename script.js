@@ -105,5 +105,9 @@ console.log(upperText);
 
 //
 //using these `` means we can poass in a value in the string
-const str = `the current fact is "${text}".Its is ${calcFactAge(2015)}`;
+const str = `the current fact is "${text}".Its is ${calcFactAge(
+  2015
+)} years old .It is probably${
+  totalUpvotes > votesFalse ? 'facts' : 'not true'
+}`;
 console.log(str);
