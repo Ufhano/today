@@ -51,7 +51,6 @@ function calcFactAge(year) {
   const age = currentYear - year;
 
   if (year > currentYear) console.log('impossible year');
-  return age;
 }
 const age1 = calcFactAge(2015);
 console.log(age1);
@@ -60,7 +59,7 @@ console.log(age1);
 
 console.log(calcFactAge(2020));
 console.log(calcFactAge(2017));
-console.log(calcFactAge(2037));
+console.log(calcFactAge(2026));
 
 let votesInteresting = 20;
 let votesMindblowing = 21;
