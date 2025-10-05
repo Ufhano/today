@@ -139,3 +139,8 @@ const [text, createdIn] = fact;
 console.log(createdIn);
 const newFact = [...fact, 'society'];
 console.log(newFact);
+//objects
+
+//so an obj is like an array just that in objs you can name your value , instead of indexes
+
+const factObj = {};
