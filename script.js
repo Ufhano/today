@@ -39,5 +39,5 @@ console.log('Upvotes', totalUpvotes);
 
 //logical operatrinos ye
 let voteFalse = 40;
-const isCorrect = voteFalse < totalUpvotes;
+const isCorrect = voteFalse === totalUpvotes;
 console.log(isCorrect);
