@@ -149,6 +149,6 @@ const factObj = {
   createdIn: 2015,
   isCorrect: true,
   createSummary: function () {
-    return `The fact ${this.text}`;
+    return `The fact ${this.text} is from the category${this.category}`;
   },
 };
