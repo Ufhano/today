@@ -82,3 +82,12 @@ if (votesInteresting) {
 } else {
   console.log('not all that ');
 }
+
+//ternary operation
+
+//if else statements are cool and all but when we want a value we use a ternary operation
+//3parts
+//A condition
+//Bthe rue side
+//C false part
+//example
