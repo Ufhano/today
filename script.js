@@ -117,7 +117,7 @@ console.log(calcFactAge(2026));
 //interestinog? =>
 
 //basic
-const calcFactAge2 = year - 2022;
+// const calcFactAge2 = year - 2022;
 //arrow function
 const calcFactAge2 = (year) =>
   //thats a fucntiion btw , now we use a tertnary function
