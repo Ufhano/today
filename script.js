@@ -17,30 +17,30 @@ btn.addEventListener('click', function () {
   }
 });
 
-//values
-//there is const value and let value
-//const cant be updated later
-//let can be updated
+// //values
+// //there is const value and let value
+// //const cant be updated later
+// //let can be updated
 
-const text = 'Lisbon is the capital of portugal';
+// const text = 'Lisbon is the capital of portugal';
 
-//update later
-let votesInteresting = 23;
-let votesMindblowing = 5;
+// //update later
+// let votesInteresting = 23;
+// let votesMindblowing = 5;
 
-//operator
-votesInteresting = votesInteresting + 1;
+// //operator
+// votesInteresting = votesInteresting + 1;
 
-votesMindblowing++;
-console.log(votesMindblowing);
+// votesMindblowing++;
+// console.log(votesMindblowing);
 
-let totalUpvotes = votesInteresting + votesMindblowing;
-console.log('Upvotes', totalUpvotes);
+// let totalUpvotes = votesInteresting + votesMindblowing;
+// console.log('Upvotes', totalUpvotes);
 
-//logical operatrinos ye
-let voteFalse = 4;
-const isCorrect = voteFalse < totalUpvotes;
-console.log(isCorrect);
+// //logical operatrinos ye
+// let voteFalse = 4;
+// const isCorrect = voteFalse < totalUpvotes;
+// console.log(isCorrect);
 
 //functions
 
@@ -58,3 +58,12 @@ console.log(age1);
 
 console.log(calcFactAge(2020));
 console.log(calcFactAge(2017));
+
+let votesInteresting = 20;
+let votesMindblowing = 21;
+
+if (votesInteresting === votesMindblowing) {
+  alert('this fact is interesting and mindblowing');
+} else if (votesInteresting < votesMindblowing) {
+  console.log('Mindblowing fact');
+}
