@@ -63,7 +63,7 @@ console.log(calcFactAge(2017));
 console.log(calcFactAge(2026));
 
 let votesInteresting = 20;
-let votesMindblowing = 21;
+let votesMindblowing = 5;
 
 if (votesInteresting === votesMindblowing) {
   alert('this fact is interesting and mindblowing');
