@@ -38,3 +38,6 @@ let totalUpvotes = votesInteresting + votesMindblowing;
 console.log('Upvotes', totalUpvotes);
 
 //logical operatrinos ye
+let voteFalse = 4;
+const isCorrect = votesFalse < totalUpvotes;
+console.log(isCorrect);
