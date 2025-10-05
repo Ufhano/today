@@ -1,8 +1,9 @@
 console.log('Hello, World!');
 
-document.querySelector('.btn-open');
+document.querySelector('.btn-open'); //selecting the button
 
-const btn = document.querySelector('.btn-open');
+const btn = document.querySelector('.btn-open'); //selecting the button
+
 const form = document.querySelector('.fact-form');
 
 //SHARE A fACT BUTTON
@@ -34,4 +35,6 @@ votesMindblowing++;
 console.log(votesMindblowing);
 
 let totalUpvotes = votesInteresting + votesMindblowing;
-console.log(totalUpvotes);
+console.log('Upvotes', totalUpvotes);
+
+//logical operatrinos ye
