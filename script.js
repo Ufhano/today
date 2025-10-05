@@ -143,4 +143,6 @@ console.log(newFact);
 
 //so an obj is like an array just that in objs you can name your value , instead of indexes
 
-const factObj = {};
+const factObj = {
+  text: 'Johannesburg is the capital of South Africa',
+};
