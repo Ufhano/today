@@ -100,5 +100,5 @@ const totalUpvotes = votesInteresting + votesMindblowing;
 const text = 'Lisbon is the capital of portugal';
 
 //passing variables in string s?
-const upperText = text.upperText;
+const upperText = text.toUpperCase();
 console.log(upperText);
