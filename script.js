@@ -69,3 +69,13 @@ if (votesInteresting === votesMindblowing) {
 } else if (votesInteresting > votesMindblowing) {
   console.log('Interesting Fact');
 }
+
+//truthy and falsy values
+//falsy valkues are 0, null, {} ,'',`undefined, NaN
+//truthy values are '0', ' ', [], 1, -1, 'false', true
+
+if (votesInteresting) {
+  console.log('truthy ');
+} else {
+  console.log('not all that ');
+}
