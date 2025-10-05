@@ -96,3 +96,5 @@ let votesFalse = 20;
 const totalUpvotes = votesInteresting + votesMindblowing;
 const message = totalUpvotes > votesFalse ? 'absolutely true' : 'really false';
 alert(message);
+//working with strings
+const text = 'Lisbon is the capital of portugal';
