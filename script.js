@@ -102,3 +102,7 @@ const text = 'Lisbon is the capital of portugal';
 //passing variables in string s?
 const upperText = text.toUpperCase();
 console.log(upperText);
+
+//
+//using these `` means we can poass in a value in the string
+const str = `the current fact is `;
