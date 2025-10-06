@@ -160,3 +160,5 @@ const factObj = {
 const { category, isCorrect } = factObj;
 console.log(category);
 console.log(factObj.createSummary());
+
+//looping over arrays
