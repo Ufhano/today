@@ -163,4 +163,6 @@ console.log(factObj.createSummary());
 
 //looping over arrays
 
-[2, 4, 6, 8].forEach(function (el) {});
+[2, 4, 6, 8].forEach(function (el) {
+  console.log(el);
+});
