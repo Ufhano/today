@@ -53,9 +53,10 @@ const factsList = document.querySelector('.facts-list');
 
 //CREATE DOM ELEMENTS : RENDER FACTS IN LIST
 factsList.innerHTML = '';
+createFactsList(initialFacts);
 
-function createFactsList() {
-  const htmlArr = initialFacts.map(
+function createFactsList(dataArray) {
+  const htmlArr = dataArray.map(
     (fact) => `<li class ="fact">
   <p>
   ${fact.text}
@@ -74,23 +75,23 @@ function createFactsList() {
   factsList.insertAdjacentHTML('afterbegin', html);
 }
 
-const htmlArr = initialFacts.map(
-  (fact) => `<li class ="fact">
-  <p>
-  ${fact.text}
-  <a
-  class ="source"
-  href ="${fact.source}"
-  target="_blank"
-  >(Source)</a>
-  </p>
-  <span class="tag" styles ="background-color:
-  #3b82f6">${fact.category} </span>
-  </li>`
-);
-console.log(htmlArr);
-const html = htmlArr.join();
-factsList.insertAdjacentHTML('afterbegin', html);
+// const htmlArr = initialFacts.map(
+//   (fact) => `<li class ="fact">
+//   <p>
+//   ${fact.text}
+//   <a
+//   class ="source"
+//   href ="${fact.source}"
+//   target="_blank"
+//   >(Source)</a>
+//   </p>
+//   <span class="tag" styles ="background-color:
+//   #3b82f6">${fact.category} </span>
+//   </li>`
+// );
+// console.log(htmlArr);
+// const html = htmlArr.join();
+// factsList.insertAdjacentHTML('afterbegin', html);
 
 //SHARE A fACT BUTTON
 btn.addEventListener('click', function () {
