@@ -163,6 +163,12 @@ console.log(factObj.createSummary());
 
 //looping over arrays
 
-[2, 4, 6, 8].forEach(function (el) {
-  console.log(el);
+// [2, 4, 6, 8].forEach(function (el) {
+//   console.log(el);
+// });
+
+//make the array x 10
+const times10 = [2, 4, 6, 8].map(function (el) {
+  return el * 10;
 });
+console.log(times10);
