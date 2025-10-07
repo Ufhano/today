@@ -55,6 +55,7 @@ const factsList = document.querySelector('.facts-list');
 factsList.innerHTML = '';
 
 //load data from Supabase
+loadFacts();
 
 async function loadFacts() {
   const res = fetch('https://vxaviwkqaugxbrgsagdd.supabase.co/rest/v1/facts', {
