@@ -189,3 +189,8 @@ const CATEGORIES = [
   { name: 'history', color: '#f97316' },
   { name: 'news', color: '#8b5cf6' },
 ];
+
+const allCategories = CATEGORIES.map((el) => el.name);
+{
+  console.log(allCategories);
+}
