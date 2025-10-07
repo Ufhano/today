@@ -5,7 +5,9 @@ document.querySelector('.btn-open'); //selecting the button
 const btn = document.querySelector('.btn-open'); //selecting the button
 
 const form = document.querySelector('.fact-form');
-console.log(btn);
+const factsList = document.querySelector('.facts-list');
+
+factsList.innerHTML = '';
 //SHARE A fACT BUTTON
 btn.addEventListener('click', function () {
   if (form.classList.contains('hidden')) {
