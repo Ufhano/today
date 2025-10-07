@@ -228,3 +228,5 @@ const initialFacts = [
     createdIn: 2015,
   },
 ];
+
+const factAges = initialFacts.map((el) => calcFactAge(el.createdIn));
