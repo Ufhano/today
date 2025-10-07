@@ -168,7 +168,12 @@ console.log(factObj.createSummary());
 // });
 
 //make the array x 10
-const times10 = [2, 4, 6, 8].map(function (el) {
-  return el * 10;
-});
+// const times10 = [2, 4, 6, 8].map(function (el) {
+//   return el * 10;
+// });
+// console.log(times10);
+//use arrow function
+const times10 = [2, 4, 6, 8].map((el) => el * 10);
+{
+}
 console.log(times10);
