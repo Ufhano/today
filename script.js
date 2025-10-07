@@ -71,10 +71,9 @@ async function loadFacts() {
     }
   );
   const data = await res.json();
-  console.log(data);
-}
 
-createFactsList(initialFacts);
+  createFactsList(data);
+}
 
 function createFactsList(dataArray) {
   const htmlArr = dataArray.map(
