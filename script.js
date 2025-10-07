@@ -54,6 +54,26 @@ const factsList = document.querySelector('.facts-list');
 //CREATE DOM ELEMENTS : RENDER FACTS IN LIST
 factsList.innerHTML = '';
 
+function createFactsList() {
+  const htmlArr = initialFacts.map(
+    (fact) => `<li class ="fact">
+  <p>
+  ${fact.text}
+  <a
+  class ="source"
+  href ="${fact.source}"
+  target="_blank"
+  >(Source)</a>
+  </p>
+  <span class="tag" styles ="background-color:
+  #3b82f6">${fact.category} </span>
+  </li>`
+  );
+  console.log(htmlArr);
+  const html = htmlArr.join();
+  factsList.insertAdjacentHTML('afterbegin', html);
+}
+
 const htmlArr = initialFacts.map(
   (fact) => `<li class ="fact">
   <p>
