@@ -230,3 +230,5 @@ const initialFacts = [
 ];
 
 const factAges = initialFacts.map((el) => calcFactAge(el.createdIn));
+console.log(factAges);
+console.log(factAges.join(`:`));
