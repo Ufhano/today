@@ -53,6 +53,17 @@ const factsList = document.querySelector('.facts-list');
 
 //CREATE DOM ELEMENTS : RENDER FACTS IN LIST
 factsList.innerHTML = '';
+
+//load data from Supabase
+fetch {"https://vxaviwkqaugxbrgsagdd.supabase.co",{
+  headers:{
+    apikey:
+    ""
+    authorization:
+  }
+}
+
+}
 createFactsList(initialFacts);
 
 function createFactsList(dataArray) {
