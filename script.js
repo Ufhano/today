@@ -70,8 +70,8 @@ async function loadFacts() {
       },
     }
   );
-
-  console.log(res);
+  const data = await res.json();
+  console.log(data);
 }
 
 createFactsList(initialFacts);
