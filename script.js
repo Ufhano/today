@@ -54,7 +54,7 @@ const htmlArr = initialFacts.map(
   >(Source)</a>
   </p>
   <span class="tag" styles ="background-color:
-  #3b82f6">technology </span>
+  #3b82f6">${fact.category} </span>
   </li>`
 );
 console.log(htmlArr);
