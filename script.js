@@ -55,17 +55,21 @@ const factsList = document.querySelector('.facts-list');
 factsList.innerHTML = '';
 
 //load data from Supabase
-const res = fetch('https://vxaviwkqaugxbrgsagdd.supabase.co/rest/v1/facts', {
-  headers: {
-    apikey:
-      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ4YXZpd2txYXVneGJyZ3NhZ2RkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTkwOTEzMjQsImV4cCI6MjA3NDY2NzMyNH0.HeiouZfyihPZa69Qqm7xzlu3NVGwFw3YOZntPjfKb3E',
 
-    authorization:
-      'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ4YXZpd2txYXVneGJyZ3NhZ2RkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTkwOTEzMjQsImV4cCI6MjA3NDY2NzMyNH0.HeiouZfyihPZa69Qqm7xzlu3NVGwFw3YOZntPjfKb3E',
-  },
-});
+async function loadFacts() {
+  const res = fetch('https://vxaviwkqaugxbrgsagdd.supabase.co/rest/v1/facts', {
+    headers: {
+      apikey:
+        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ4YXZpd2txYXVneGJyZ3NhZ2RkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTkwOTEzMjQsImV4cCI6MjA3NDY2NzMyNH0.HeiouZfyihPZa69Qqm7xzlu3NVGwFw3YOZntPjfKb3E',
 
-console.log(res);
+      authorization:
+        'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ4YXZpd2txYXVneGJyZ3NhZ2RkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTkwOTEzMjQsImV4cCI6MjA3NDY2NzMyNH0.HeiouZfyihPZa69Qqm7xzlu3NVGwFw3YOZntPjfKb3E',
+    },
+  });
+
+  console.log(res);
+}
+
 createFactsList(initialFacts);
 
 function createFactsList(dataArray) {
