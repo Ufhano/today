@@ -5,7 +5,7 @@ document.querySelector('.btn-open'); //selecting the button
 const btn = document.querySelector('.btn-open'); //selecting the button
 
 const form = document.querySelector('.fact-form');
-
+console.log(btn);
 //SHARE A fACT BUTTON
 btn.addEventListener('click', function () {
   if (form.classList.contains('hidden')) {
@@ -46,14 +46,14 @@ btn.addEventListener('click', function () {
 
 //function to calculate the age of a fact
 
-function calcFactAge(year) {
-  const currentYear = new Date().getFullYear(); //2025;//instead of writing the currect year could use a function inside of a function
-  const age = currentYear - year;
+// function calcFactAge(year) {
+//   const currentYear = new Date().getFullYear(); //2025;//instead of writing the currect year could use a function inside of a function
+//   const age = currentYear - year;
 
-  if (age >= 0) return age;
-  else
-    return `impossible year .Year needs to be less or equal to ${currentYear}`;
-}
+//   if (age >= 0) return age;
+//   else
+//     return `impossible year .Year needs to be less or equal to ${currentYear}`;
+// }
 // const age1 = calcFactAge(2015);
 // console.log(age1);
 
@@ -127,39 +127,39 @@ function calcFactAge(year) {
 
 //arrays
 
-const fact = [' Johannesburg is the capital of South Africa', 2015, true];
-console.log(fact);
-console.log(fact[1]);
-console.log(fact.length);
-console.log(fact.length - 1);
+// const fact = [' Johannesburg is the capital of South Africa', 2015, true];
+// console.log(fact);
+// console.log(fact[1]);
+// console.log(fact.length);
+// console.log(fact.length - 1);
 
-//creating multiple var
-const [text, createdIn] = fact;
+// //creating multiple var
+// const [text, createdIn] = fact;
 
-console.log(createdIn);
-const newFact = [...fact, 'society'];
-console.log(newFact);
+// console.log(createdIn);
+// const newFact = [...fact, 'society'];
+// console.log(newFact);
 //objects
 
 //so an obj is like an array just that in objs you can name your value , instead of indexes
 
-const factObj = {
-  text: 'Johannesburg is the capital of South Africa',
-  category: 'society',
-  createdIn: 2015,
-  isCorrect: true,
-  //method
-  createSummary: function () {
-    return `The fact ${
-      this.text
-    } is from the category ${this.category.toUpperCase()}`;
-  },
-};
+// const factObj = {
+//   text: 'Johannesburg is the capital of South Africa',
+//   category: 'society',
+//   createdIn: 2015,
+//   isCorrect: true,
+//   //method
+//   createSummary: function () {
+//     return `The fact ${
+//       this.text
+//     } is from the category ${this.category.toUpperCase()}`;
+//   },
+// };
 //destructuring objs
 
-const { category, isCorrect } = factObj;
-console.log(category);
-console.log(factObj.createSummary());
+// const { category, isCorrect } = factObj;
+// console.log(category);
+// console.log(factObj.createSummary());
 
 //looping over arrays
 
@@ -173,62 +173,66 @@ console.log(factObj.createSummary());
 // });
 // console.log(times10);
 //use arrow function
-const times10 = [2, 4, 6, 8].map((el) => el * 10);
-{
-}
-console.log(times10);
+// const times10 = [2, 4, 6, 8].map((el) => el * 10);
+// {
+// }
+// console.log(times10);
 
 //array of objects
-const CATEGORIES = [
-  { name: 'technology', color: '#3b82f6' },
-  { name: 'science', color: '#16a34a' },
-  { name: 'finance', color: '#ef4444' },
-  { name: 'society', color: '#eab308' },
-  { name: 'entertainment', color: '#db2777' },
-  { name: 'health', color: '#14b8a6' },
-  { name: 'history', color: '#f97316' },
-  { name: 'news', color: '#8b5cf6' },
-];
+// const CATEGORIES = [
+//   { name: 'technology', color: '#3b82f6' },
+//   { name: 'science', color: '#16a34a' },
+//   { name: 'finance', color: '#ef4444' },
+//   { name: 'society', color: '#eab308' },
+//   { name: 'entertainment', color: '#db2777' },
+//   { name: 'health', color: '#14b8a6' },
+//   { name: 'history', color: '#f97316' },
+//   { name: 'news', color: '#8b5cf6' },
+// ];
 
-const allCategories = CATEGORIES.map((el) => el.name);
-{
-  console.log(allCategories);
-}
+// const allCategories = CATEGORIES.map((el) => el.name);
+// {
+//   console.log(allCategories);
+// }
 
-const initialFacts = [
-  {
-    id: 1,
-    text: 'React is being developed by Meta (formerly facebook)',
-    source: 'https://opensource.fb.com/',
-    category: 'technology',
-    votesInteresting: 24,
-    votesMindblowing: 9,
-    votesFalse: 4,
-    createdIn: 2021,
-  },
-  {
-    id: 2,
-    text: 'Millennial dads spend 3 times as much time with their kids than their fathers spent with them. In 1982, 43% of fathers had never changed a diaper. Today, that number is down to 3%',
-    source:
-      'https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids',
-    category: 'society',
-    votesInteresting: 11,
-    votesMindblowing: 2,
-    votesFalse: 0,
-    createdIn: 2019,
-  },
-  {
-    id: 3,
-    text: 'Lisbon is the capital of Portugal',
-    source: 'https://en.wikipedia.org/wiki/Lisbon',
-    category: 'society',
-    votesInteresting: 8,
-    votesMindblowing: 3,
-    votesFalse: 1,
-    createdIn: 2015,
-  },
-];
+// const initialFacts = [
+//   {
+//     id: 1,
+//     text: 'React is being developed by Meta (formerly facebook)',
+//     source: 'https://opensource.fb.com/',
+//     category: 'technology',
+//     votesInteresting: 24,
+//     votesMindblowing: 9,
+//     votesFalse: 4,
+//     createdIn: 2021,
+//   },
+//   {
+//     id: 2,
+//     text: 'Millennial dads spend 3 times as much time with their kids than their fathers spent with them. In 1982, 43% of fathers had never changed a diaper. Today, that number is down to 3%',
+//     source:
+//       'https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids',
+//     category: 'society',
+//     votesInteresting: 11,
+//     votesMindblowing: 2,
+//     votesFalse: 0,
+//     createdIn: 2019,
+//   },
+//   {
+//     id: 3,
+//     text: 'Lisbon is the capital of Portugal',
+//     source: 'https://en.wikipedia.org/wiki/Lisbon',
+//     category: 'society',
+//     votesInteresting: 8,
+//     votesMindblowing: 3,
+//     votesFalse: 1,
+//     createdIn: 2015,
+//   },
+// ];
 
-const factAges = initialFacts.map((el) => calcFactAge(el.createdIn));
-console.log(factAges);
-console.log(factAges.join(`:`));
+// const factAges = initialFacts.map((el) => calcFactAge(el.createdIn));
+// console.log(factAges);
+// console.log(factAges.join(`:`));
+
+// //what is dom
+// //documnet object model
+// //dom allows us to change html using javascript
