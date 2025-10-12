@@ -77,8 +77,10 @@ async function loadFacts() {
   //json is a format that is used to store data
   //json is a string that is used to store data
   const data = await res.json();
+  //filtereing by category
+  const filteredData = data.filter((fact) => fact.category === 'society');
 
-  createFactsList(data);
+  createFactsList(filteredData);
 }
 
 function createFactsList(dataArray) {
@@ -130,6 +132,7 @@ btn.addEventListener('click', function () {
   }
 });
 
+//filter ,returns a true or false
 console.log([7, 64, 6, -23, 11].filter((el) => el > 10));
 
 // //values
