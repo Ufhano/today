@@ -133,8 +133,9 @@ btn.addEventListener('click', function () {
 });
 
 //filter ,returns a true or false
-console.log([7, 64, 6, -23, 11].filter((el) => el > 10));
-
+console.log([7, 64, 6, -23, 11].filter((el) => el < 10));
+//findmethod returns 1st element of the array
+console.log([7, 64, 6, -23, 11].find((el) => el > 10));
 // //values
 // //there is const value and let value
 // //const cant be updated later
