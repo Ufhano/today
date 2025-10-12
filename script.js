@@ -78,9 +78,9 @@ async function loadFacts() {
   //json is a string that is used to store data
   const data = await res.json();
   //filtereing by category
-  const filteredData = data.filter((fact) => fact.category === 'society');
+  // const filteredData = data.filter((fact) => fact.category === 'society');
 
-  createFactsList(filteredData);
+  createFactsList(data);
 }
 
 function createFactsList(dataArray) {
