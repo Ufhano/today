@@ -45,8 +45,9 @@ const CATEGORIES = [
   { name: 'news', color: '#8b5cf6' },
 ];
 
-const newc = CATEGORIES.find((color) => color);
-console.log(newc);
+// const newc = CATEGORIES.find((color) => color);
+// console.log(newc);
+console.log(CATEGORIES.find((cat) => cat.name === 'society').color);
 
 //SELECTING DOM ELEMENTS
 const btn = document.querySelector('.btn-open'); //selecting the button
