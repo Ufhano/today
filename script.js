@@ -70,6 +70,12 @@ async function loadFacts() {
       },
     }
   );
+  //this is how we get the data from the api
+  // console.log(res);
+  //this is how we convert the data to json
+  //why we convert to json is because
+  //json is a format that is used to store data
+  //json is a string that is used to store data
   const data = await res.json();
 
   createFactsList(data);
@@ -123,6 +129,8 @@ btn.addEventListener('click', function () {
     btn.textContent = 'Share a fact';
   }
 });
+
+console.log([7, 64, 6, -23, 11].filter((el) => el > 10));
 
 // //values
 // //there is const value and let value
