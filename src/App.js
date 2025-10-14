@@ -2,6 +2,7 @@ import './style.css';
 function App() {
   return (
     <>
+      {/* Header*/}
       <header className="header">
         <div className="logo">
           <img
@@ -16,14 +17,24 @@ function App() {
         <button class="btn btn-large btn-open">Share a fact</button>
       </header>
 
-      <CategoryFilter />
+      <NewFactForm />
+      <main class="main">
+        <CategoryFilter />
+        <FactList />
+      </main>
     </>
   );
 }
-
+function NewFactForm() {
+  return <form className="fact-form">Fact form</form>;
+}
 //creating new compnents in one file which is not best of practise ,
 function CategoryFilter() {
   return <aside>Category filter</aside>;
+}
+
+function FactList() {
+  return <section>Fact list </section>;
 }
 
 export default App;
