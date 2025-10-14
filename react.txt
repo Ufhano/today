@@ -1,0 +1,10 @@
+Javascript library for building user interface 
+component based 
+react is based on declarative programming paradigm
+it is maintained by facebook and a community of individual developers and companies 
+driven by state
+it is used to build single page applications and mobile applications
+keep data in sync with ui 
+libraries enfoce the right way of structuring  and writing code with less bugs 
+react is not a framework it is a library
+framework is a complete package with rules and guidelines to follow like angular vue etc react is a library that can be used with other libraries
