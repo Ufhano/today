@@ -1,15 +1,29 @@
 import './style.css';
 function App() {
   return (
-    <header className="header">
-      <div className="logo">
-        <img src="logo.png" height="68" width="68" alt="Today I Learned Logo" />
-        <h1>Today I Learned</h1>
-      </div>
+    <>
+      <header className="header">
+        <div className="logo">
+          <img
+            src="logo.png"
+            height="68"
+            width="68"
+            alt="Today I Learned Logo"
+          />
+          <h1>Today I Learned</h1>
+        </div>
 
-      <button class="btn btn-large btn-open">Share a fact</button>
-    </header>
+        <button class="btn btn-large btn-open">Share a fact</button>
+      </header>
+
+      <CategoryFilter />
+    </>
   );
+}
+
+//creating new compnents in one file which is not best of practise ,
+function CategoryFilter() {
+  return <aside>Category filter</aside>;
 }
 
 export default App;
