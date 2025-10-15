@@ -91,21 +91,17 @@ function FactList() {
           <li className="fact">
             <p>
               {fact.text}
-              <a
-                className="source"
-                href="https://opensource.fb.com/"
-                target="_blank"
-              >
+              <a className="source" href={fact.source} target="_blank">
                 (Source)
               </a>
             </p>
             <span className="tag" style={{ backgroundColor: '#3b82f6' }}>
-              technology
+              {fact.category}
             </span>
             <div className="vote-buttons">
-              <button>👍 24</button>
-              <button>🤯 9</button>
-              <button>⛔️ 4</button>
+              <button>👍 {fact.votesInteresting}</button>
+              <button>🤯 {fact.votesMindblowing}</button>
+              <button>⛔️ {fact.votesFalse}</button>
             </div>
           </li>
         ))}
