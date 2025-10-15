@@ -95,7 +95,14 @@ function FactList() {
                 (Source)
               </a>
             </p>
-            <span className="tag" style={{ backgroundColor: '#3b82f6' }}>
+            <span
+              className="tag"
+              style={{
+                backgroundColor: CATEGORIES.find(
+                  (cat) => cat.name === fact.category
+                ).color,
+              }}
+            >
               {fact.category}
             </span>
             <div className="vote-buttons">
