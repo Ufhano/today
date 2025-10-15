@@ -90,7 +90,7 @@ function FactList() {
         {facts.map((fact) => (
           <li className="fact">
             <p>
-              React is being developed by Meta (formerly facebook)
+              {fact.text}
               <a
                 className="source"
                 href="https://opensource.fb.com/"
