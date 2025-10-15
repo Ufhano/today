@@ -88,14 +88,14 @@ function FactList() {
     <section>
       <ul className="facts-list">
         {facts.map((fact) => (
-          <Fact factObj={fact} />
+          <Fact fact={fact} />
         ))}
       </ul>
     </section>
   );
 }
 
-function Fact(props) {
+function Fact(fact) {
   return (
     <li key={fact.id} className="fact">
       <p>
