@@ -88,7 +88,26 @@ function FactList() {
     <section>
       <ul className="facts-list">
         {facts.map((fact) => (
-          <li>Fact</li>
+          <li className="fact">
+            <p>
+              React is being developed by Meta (formerly facebook)
+              <a
+                className="source"
+                href="https://opensource.fb.com/"
+                target="_blank"
+              >
+                (Source)
+              </a>
+            </p>
+            <span className="tag" style={{"backgroundcolor: "#3b82f6"}}>
+              technology
+            </span>
+            <div className="vote-buttons">
+              <button>👍 24</button>
+              <button>🤯 9</button>
+              <button>⛔️ 4</button>
+            </div>
+          </li>
         ))}
       </ul>
     </section>
