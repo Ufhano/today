@@ -99,17 +99,18 @@ const CATEGORIES = [
 function NewFactForm() {
   return (
     <form className="fact-form">
-      {" "}
       <input type="text" placeholder="Share a fact with the world..." />
       <span>200</span>
       <input type="text" placeholder="Trustworthy source..." />
       <select>
         <option value="">Choose category:</option>
-        <option value="technology">Technology</option>
-        <option value="science">Science</option>
-        <option value="finance">Finance</option>
+        {CATEGORIES.map((cat) => (
+          <option key={cat.name} value={cat.name}>
+            {cat.name.toUpperCase()}
+          </option>
+        ))}
       </select>
-      <button class="btn btn-large">Post</button>
+      <button className="btn btn-large">Post</button>
     </form>
   );
 }
