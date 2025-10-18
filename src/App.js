@@ -33,7 +33,16 @@ const initialFacts = [
     createdIn: 2015,
   },
 ];
+//counter function
 
+function Counter() {
+  return (
+    <div>
+      <span style={{ fontSize: "40px" }}>8</span>
+      <button className="btn btn-large">+1</button>
+    </div>
+  );
+}
 function App() {
   const appTitle = "Today I Learned";
   return (
@@ -52,7 +61,7 @@ function App() {
 
         <button className="btn btn-large btn-open">Share a fact</button>
       </header>
-
+      <Counter />
       <NewFactForm />
       <main className="main">
         <CategoryFilter />
