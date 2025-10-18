@@ -50,29 +50,10 @@ function Counter() {
 function App() {
   //define state variable
   const [showForm, setShowForm] = useState(false);
-  const appTitle = "Today I Learned";
+
   return (
     <>
       {/* Header*/}
-      <header className="header">
-        <div className="logo">
-          <img
-            src="logo.png"
-            height="68"
-            width="68"
-            alt="Today I Learned Logo"
-          />
-          <h1>{appTitle}</h1>
-        </div>
-
-        <button
-          className="btn btn-large btn-open"
-          //3update state variable
-          onClick={() => setShowForm((show) => !show)}
-        >
-          Share a fact
-        </button>
-      </header>
 
       {/**use state variable*/}
       {/**show form if this is true is false , dont show*/}
@@ -84,6 +65,24 @@ function App() {
       </main>
     </>
   );
+}
+function Header() {
+  const appTitle = "Today I Learned";
+  return;
+  <header className="header">
+    <div className="logo">
+      <img src="logo.png" height="68" width="68" alt="Today I Learned Logo" />
+      <h1>{appTitle}</h1>
+    </div>
+
+    <button
+      className="btn btn-large btn-open"
+      //3update state variable
+      onClick={() => setShowForm((show) => !show)}
+    >
+      Share a fact
+    </button>
+  </header>;
 }
 function NewFactForm() {
   return <form className="fact-form">Fact form</form>;
