@@ -80,13 +80,16 @@ function CategoryFilter() {
   return (
     <aside>
       <ul>
+        <li className="category">
+          <button className="btn btn-all-categories">All</button>
+        </li>
         {CATEGORIES.map((cat) => (
-          <li className="category">
+          <li key={cat.name} className="category">
             <button
               className="btn btn-category"
-              style={{ backgroundColor: "#3b82f6" }}
+              style={{ backgroundColor: cat.color }}
             >
-              Technology
+              {cat.name}
             </button>
           </li>
         ))}
