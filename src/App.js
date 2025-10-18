@@ -53,7 +53,7 @@ function App() {
 
   return (
     <>
-      {/* Header*/}
+      <Header setShowForm={setShowForm} />
 
       {/**use state variable*/}
       {/**show form if this is true is false , dont show*/}
@@ -66,7 +66,7 @@ function App() {
     </>
   );
 }
-function Header() {
+function Header({ setShowForm }) {
   const appTitle = "Today I Learned";
   return;
   <header className="header">
