@@ -53,7 +53,7 @@ function App() {
 
   return (
     <>
-      <Header setShowForm={setShowForm} />
+      <Header showForm={showForm} setShowForm={setShowForm} />
 
       {/**use state variable*/}
       {/**show form if this is true is false , dont show*/}
@@ -66,7 +66,7 @@ function App() {
     </>
   );
 }
-function Header({ setShowForm }) {
+function Header({ showForm, setShowForm }) {
   const appTitle = "Today I Learned";
   return (
     <header className="header">
@@ -80,7 +80,7 @@ function Header({ setShowForm }) {
         //3update state variable
         onClick={() => setShowForm((show) => !show)}
       >
-        Share a fact
+        {showForm ? "Close" : "Share a fact"}
       </button>
     </header>
   );
