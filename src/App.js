@@ -66,8 +66,9 @@ function App() {
 
         <button className="btn btn-large btn-open">Share a fact</button>
       </header>
+      {/**show form if this is true is false , dont show*/}
+      {showForm ? <NewFactForm /> : null}
 
-      <NewFactForm />
       <main className="main">
         <CategoryFilter />
         <FactList />
