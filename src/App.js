@@ -48,6 +48,7 @@ function Counter() {
   );
 }
 function App() {
+  //define state variable
   const [showForm, setShowForm] = useState(false);
   const appTitle = "Today I Learned";
   return (
@@ -66,11 +67,14 @@ function App() {
 
         <button
           className="btn btn-large btn-open"
+          //3update state variable
           onClick={() => setShowForm((show) => !show)}
         >
           Share a fact
         </button>
       </header>
+
+      {/**use state variable*/}
       {/**show form if this is true is false , dont show*/}
       {showForm ? <NewFactForm /> : null}
 
