@@ -64,7 +64,12 @@ function App() {
           <h1>{appTitle}</h1>
         </div>
 
-        <button className="btn btn-large btn-open">Share a fact</button>
+        <button
+          className="btn btn-large btn-open"
+          onClick={() => setShowForm(true)}
+        >
+          Share a fact
+        </button>
       </header>
       {/**show form if this is true is false , dont show*/}
       {showForm ? <NewFactForm /> : null}
