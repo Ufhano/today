@@ -66,7 +66,7 @@ function App() {
 
         <button
           className="btn btn-large btn-open"
-          onClick={() => setShowForm(true)}
+          onClick={() => setShowForm((show) => !show)}
         >
           Share a fact
         </button>
