@@ -48,6 +48,7 @@ function Counter() {
   );
 }
 function App() {
+  const [showForm, setShowForm] = useState(false);
   const appTitle = "Today I Learned";
   return (
     <>
