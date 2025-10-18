@@ -65,7 +65,7 @@ function App() {
 
         <button className="btn btn-large btn-open">Share a fact</button>
       </header>
-      <Counter />
+
       <NewFactForm />
       <main className="main">
         <CategoryFilter />
