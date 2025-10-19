@@ -97,11 +97,24 @@ const CATEGORIES = [
   { name: "news", color: "#8b5cf6" },
 ];
 function NewFactForm() {
+  const [text, setText] = useState("");
+  const [source, setSource] = useState("");
+  const [category, setCategory] = useState("");
   return (
     <form className="fact-form">
-      <input type="text" placeholder="Share a fact with the world..." />
+      <input
+        type="text"
+        placeholder="Share a fact with the world..."
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+      />
       <span>200</span>
-      <input type="text" placeholder="Trustworthy source..." />
+      <input
+        type="text"
+        placeholder="Trustworthy source..."
+        value={source}
+        onChange={(e) => setText(e.target.value)}
+      />
       <select>
         <option value="">Choose category:</option>
         {CATEGORIES.map((cat) => (
