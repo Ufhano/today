@@ -102,7 +102,12 @@ function NewFactForm() {
   const [category, setCategory] = useState("");
   const textLength = text.length;
   function handleSubmit(e) {
+    //prevent browser reload
     e.preventDefault();
+    console.log(text, source, category);
+    if (text && source && category && textLength <= 200) {
+      // TODO: submit the new fact (update state or send to API)
+    }
   }
 
   return (
@@ -118,7 +123,7 @@ function NewFactForm() {
         type="text"
         placeholder="Trustworthy source..."
         value={source}
-        onChange={(e) => setText(e.target.value)}
+        onChange={(e) => setSource(e.target.value)}
       />
       <select value={category} onChange={(e) => setCategory(e.target.value)}>
         <option value="">Choose category:</option>
