@@ -184,10 +184,7 @@ function CategoryFilter() {
   );
 }
 
-function FactList() {
-  //temporary
-  const facts = initialFacts;
-
+function FactList({ facts }) {
   return (
     <section>
       <ul className="facts-list">
@@ -195,27 +192,29 @@ function FactList() {
           <Fact key={fact.id} fact={fact} />
         ))}
       </ul>
-      <p>There are {facts.length} facts , Add your own!</p>
+      <p>There are {facts.length} facts. Add your own!</p>
     </section>
   );
 }
 
 function Fact({ fact }) {
+  const categoryObj = CATEGORIES.find((cat) => cat.name === fact.category);
+  const tagColor = categoryObj?.color ?? "#ddd";
+
   return (
     <li className="fact">
       <p>
         {fact.text}
-        <a className="source" href={fact.source} target="_blank">
+        <a
+          className="source"
+          href={fact.source}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           (Source)
         </a>
       </p>
-      <span
-        className="tag"
-        style={{
-          backgroundColor: CATEGORIES.find((cat) => cat.name === fact.category)
-            .color,
-        }}
-      >
+      <span className="tag" style={{ backgroundColor: tagColor }}>
         {fact.category}
       </span>
       <div className="vote-buttons">
