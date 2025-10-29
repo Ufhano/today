@@ -50,6 +50,7 @@ function Counter() {
 function App() {
   //define state variable
   const [showForm, setShowForm] = useState(false);
+  const [facts, setFacts] = useState(initialFacts);
 
   return (
     <>
@@ -57,11 +58,13 @@ function App() {
 
       {/**use state variable*/}
       {/**show form if this is true is false , dont show*/}
-      {showForm ? <NewFactForm /> : null}
+      {showForm ? (
+        <NewFactForm setFacts={setFacts} setShowForm={setShowForm} />
+      ) : null}
 
       <main className="main">
         <CategoryFilter />
-        <FactList />
+        <FactList facts={facts} />
       </main>
     </>
   );
@@ -96,7 +99,7 @@ const CATEGORIES = [
   { name: "history", color: "#f97316" },
   { name: "news", color: "#8b5cf6" },
 ];
-function NewFactForm() {
+function NewFactForm({ setFacts, setShowForm }) {
   const [text, setText] = useState("");
   const [source, setSource] = useState("");
   const [category, setCategory] = useState("");
@@ -105,8 +108,28 @@ function NewFactForm() {
     //prevent browser reload
     e.preventDefault();
     console.log(text, source, category);
+    //check if data is valid
     if (text && source && category && textLength <= 200) {
-      // TODO: submit the new fact (update state or send to API)
+      const newFact = {
+        id: Math.round(Math.random() * 1000000),
+        text: text,
+        source: source,
+        category: category,
+        votesInteresting: 0,
+        votesMindblowing: 0,
+        votesFalse: 0,
+        createdIn: new Date().getFullYear(),
+      };
+
+      setFacts((facts) => [newFact, ...facts]);
+      //reset input fields
+      setText("");
+      setSource("");
+      setCategory("");
+      //
+
+      //close form
+      setShowForm(false);
     }
   }
 
