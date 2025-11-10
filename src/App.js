@@ -55,8 +55,10 @@ function App() {
   //use effect to fetch data from supabase
   useEffect(function () {
     async function getFacts() {
-      const { data: facts, error } = await supabase.from("facts").select("id");
+      const { data: facts, error } = await supabase.from("facts").select("*");
+      console.log(facts);
     }
+    getFacts();
   }, []);
 
   return (
