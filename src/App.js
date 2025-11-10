@@ -1,5 +1,5 @@
 import "./style.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import supabase from "./supabase";
 
 const initialFacts = [
@@ -52,6 +52,8 @@ function App() {
   //define state variable
   const [showForm, setShowForm] = useState(false);
   const [facts, setFacts] = useState(initialFacts);
+  //use effect to fetch data from supabase
+  useEffect(function () {}, []);
 
   return (
     <>
