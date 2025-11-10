@@ -53,7 +53,11 @@ function App() {
   const [showForm, setShowForm] = useState(false);
   const [facts, setFacts] = useState(initialFacts);
   //use effect to fetch data from supabase
-  useEffect(function () {}, []);
+  useEffect(function () {
+    async function getFacts() {
+      const { data: facts, error } = await supabase.from("facts").select("id");
+    }
+  }, []);
 
   return (
     <>
