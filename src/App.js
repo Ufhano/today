@@ -51,12 +51,16 @@ function Counter() {
 function App() {
   //define state variable
   const [showForm, setShowForm] = useState(false);
-  const [facts, setFacts] = useState(initialFacts);
+  const [facts, setFacts] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+
   //use effect to fetch data from supabase
   useEffect(function () {
     async function getFacts() {
+      setIsLoading(true);
       const { data: facts, error } = await supabase.from("facts").select("*");
-      console.log(facts);
+      setFacts(facts);
+      setIsLoading(false);
     }
     getFacts();
   }, []);
@@ -72,11 +76,14 @@ function App() {
       ) : null}
 
       <main className="main">
+        {isLoading ? <Loader /> : <FactList facts={facts} />}
         <CategoryFilter />
-        <FactList facts={facts} />
       </main>
     </>
   );
+}
+function Loader() {
+  return <p>Loading...</p>;
 }
 function Header({ showForm, setShowForm }) {
   const appTitle = "Today I Learned";
