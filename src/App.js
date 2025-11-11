@@ -141,18 +141,22 @@ function NewFactForm({ setFacts, setShowForm }) {
     //prevent browser reload
     e.preventDefault();
     console.log(text, source, category);
+
     //check if data is valid
     if (text && source && category && textLength <= 200) {
-      const newFact = {
-        id: Math.round(Math.random() * 1000000),
-        text: text,
-        source: source,
-        category: category,
-        votesInteresting: 0,
-        votesMindblowing: 0,
-        votesFalse: 0,
-        createdIn: new Date().getFullYear(),
-      };
+      // const newFact = {
+      //   id: Math.round(Math.random() * 1000000),
+      //   text: text,
+      //   source: source,
+      //   category: category,
+      //   votesInteresting: 0,
+      //   votesMindblowing: 0,
+      //   votesFalse: 0,
+      //   createdIn: new Date().getFullYear(),
+      // };
+
+      //3upload fact to supabase and recivev the new fact obj
+      supabase.from("facts").insert([text, source, category]);
 
       setFacts((facts) => [newFact, ...facts]);
       //reset input fields
