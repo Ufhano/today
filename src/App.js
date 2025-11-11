@@ -177,7 +177,7 @@ function NewFactForm({ setFacts, setShowForm }) {
         return;
       }
 
-      setFacts((facts) => [newFact[0], ...facts]);
+      if (!error) setFacts((facts) => [newFact[0], ...facts]);
       //reset input fields
       setText("");
       setSource("");
@@ -277,7 +277,7 @@ function FactList({ facts }) {
 function Fact({ fact }) {
   const categoryObj = CATEGORIES.find((cat) => cat.name === fact.category);
   const tagColor = categoryObj?.color ?? "#ddd";
-
+  function handleVote() {}
   return (
     <li className="fact">
       <p>
@@ -295,7 +295,7 @@ function Fact({ fact }) {
         {fact.category}
       </span>
       <div className="vote-buttons">
-        <button>👍 {fact.votesInteresting}</button>
+        <button onClick={handleVote}>👍 {fact.votesInteresting}</button>
         <button>🤯 {fact.votesMindblowing}</button>
         <button>⛔️ {fact.votesFalse}</button>
       </div>
