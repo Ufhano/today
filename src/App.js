@@ -53,15 +53,24 @@ function App() {
   const [showForm, setShowForm] = useState(false);
   const [facts, setFacts] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [currentCategory, setCurrentCategory] = useState("technology");
 
   //use effect to fetch data from supabase
   useEffect(function () {
     async function getFacts() {
       setIsLoading(true);
-      const { data: facts, error } = await supabase.from("facts").select("*");
-      setFacts(facts);
-      // setIsLoading(false);
+      const { data: facts, error } = await supabase
+        .from("facts")
+        .select("*")
+        .eq("category", "technology")
+        .order("text", { ascending: false })
+        .limit(1000);
+
+      if (!error) setFacts(facts);
+      else alert("There was a problem getting data");
+      setIsLoading(false);
     }
+
     getFacts();
   }, []);
 
@@ -76,12 +85,13 @@ function App() {
       ) : null}
 
       <main className="main">
-        {isLoading ? <Loader /> : <FactList facts={facts} />}
         <CategoryFilter />
+        {isLoading ? <Loader /> : <FactList facts={facts} />}
       </main>
     </>
   );
 }
+
 function Loader() {
   return <p className="message">Loading...</p>;
 }
