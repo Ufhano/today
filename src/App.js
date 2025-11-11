@@ -60,7 +60,7 @@ function App() {
       setIsLoading(true);
       const { data: facts, error } = await supabase.from("facts").select("*");
       setFacts(facts);
-      setIsLoading(false);
+      // setIsLoading(false);
     }
     getFacts();
   }, []);
@@ -83,7 +83,7 @@ function App() {
   );
 }
 function Loader() {
-  return <p>Loading...</p>;
+  return <p className="message">Loading...</p>;
 }
 function Header({ showForm, setShowForm }) {
   const appTitle = "Today I Learned";
