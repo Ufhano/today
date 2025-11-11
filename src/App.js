@@ -137,6 +137,7 @@ function NewFactForm({ setFacts, setShowForm }) {
   const [source, setSource] = useState("");
   const [category, setCategory] = useState("");
   const textLength = text.length;
+
   async function handleSubmit(e) {
     //prevent browser reload
     e.preventDefault();
@@ -158,11 +159,22 @@ function NewFactForm({ setFacts, setShowForm }) {
       //3upload fact to supabase and recivev the new fact obj
       const { data: newFact, error } = await supabase
         .from("facts")
-        .insert([text, source, category])
+        .insert([
+          {
+            text: text,
+            source: source,
+            category: category,
+          },
+        ])
         .select();
-      console.log(newFact);
 
-      // setFacts((facts) => [newFact, ...facts]);
+      if (error) {
+        console.error(error);
+        alert("Error uploading fact: " + error.message);
+        return;
+      }
+
+      setFacts((facts) => [newFact[0], ...facts]);
       //reset input fields
       setText("");
       setSource("");
