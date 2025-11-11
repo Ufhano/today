@@ -169,6 +169,7 @@ function NewFactForm({ setFacts, setShowForm }) {
           },
         ])
         .select();
+      setIsUploading(false);
 
       if (error) {
         console.error(error);
@@ -184,7 +185,7 @@ function NewFactForm({ setFacts, setShowForm }) {
       //
 
       //close form
-      // setShowForm(false);
+      setShowForm(false);
     }
   }
 
