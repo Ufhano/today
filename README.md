@@ -57,7 +57,8 @@ Leaderboards for top contributors
 Mobile-optimized and offline-accessible version (PWA)
 
 Installation
-git clone https://github.com/yourusername/today-i-learnt.git
+git clone 
+https://github.com/yourusername/today-i-learnt.git
 cd today-i-learnt
 npm install
 npm start
