@@ -227,7 +227,8 @@ function FactList({ facts, setFacts }) {
           <Fact key={fact.id} fact={fact} setFacts={setFacts} />
         ))}
       </ul>
-      <p>There are {facts.length} facts. Add your own!</p>
+      <p>There are {facts.length} facts. Add your own! </p>
+      <p> This web app is still under development<p/>
     </section>
   );
 }
